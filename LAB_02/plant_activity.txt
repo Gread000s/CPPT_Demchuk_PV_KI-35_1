@@ -1,0 +1,17 @@
+Plant's name: Sunflower
+Plant's species: Helianthus
+Plant's age: 2
+Plant's feeling: 1
+Plant's location: Outside
+Plant's height: 1.5
+Dirt type: Loamy
+Sunlight exposure: Full sun
+Caretaker: Pavlo (Male)
+
+Status of Sunflower: Age: 2, Location: Outside, Height: 1.5, Feeling: 1
+Sunflower is watered. Feeling improved to 2
+Sunflower is fertilized. Feeling improved to 4
+Sunflower is struggling and needs attention!
+Sunflower has been relocated to Indoor
+Sunflower's caretaker has been changed to John
+Status of Sunflower: Age: 2, Location: Indoor, Height: 1.5, Feeling: 4
