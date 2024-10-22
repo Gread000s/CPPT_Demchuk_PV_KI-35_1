@@ -1,14 +1,12 @@
-package KI_305.Demchuk.Lab2;
-
-import java.io.FileWriter;
-import java.io.IOException;
-
-/**
- * Клас, який представляє рослину.
- * Включає інформацію про вид, вік, стан рослини, місцезнаходження, висоту, тип ґрунту, рівень освітлення та доглядача.
- * @author Demchuk.KI-305
+/*
+ * Пакет лабораторної роботи №3 
  */
-public class Plant {
+package KI305.Demchuk.Lab3;
+
+import java.io.*;
+
+public abstract class Plant {
+
 
     private String name;                            // Назва рослини
     private Species species;                        // Вид рослини
@@ -20,7 +18,9 @@ public class Plant {
     private SunlightExposure sunlightExposure;      // Кількість світла, яку отримує рослина
     private Caretaker caretaker;                    // Доглядач рослини
 
+
     private static boolean isFirstLog = true;       // Прапорець для перевірки, чи це перший запис у файл
+
 
     /**
      * Конструктор за замовчуванням, ініціалізує значення властивостей рослини.
@@ -32,6 +32,7 @@ public class Plant {
         this.caretaker = new Caretaker();
         this.feeling = 5;  // Початковий стан "відчуттів" рослини (від 0 до 10)
     }
+
 
     /**
      * Конструктор з параметрами.
@@ -61,15 +62,42 @@ public class Plant {
         this.sunlightExposure.setExposure(sunlightExposure);
         this.caretaker.setSexCaretaker(caretakerSex);
         this.caretaker.setNameCaretaker(caretakerName);
-        Writer("Plant's name: " + name + "\n"
-                + "Plant's species: " + species + "\n"
-                + "Plant's age: " + age + "\n"
-                + "Plant's feeling: " + feeling + "\n"
-                + "Plant's location: " + location + "\n"
-                + "Plant's height: " + height + "\n"
-                + "Dirt type: " + dirtType + "\n"
-                + "Sunlight exposure: " + sunlightExposure + "\n"
-                + "Caretaker: " + caretakerName + " (" + caretakerSex + ")\n");
+        logActivity( "Tree name: " + name);
+        logActivity( "Tree species: " + species);
+        logActivity( "Tree age: " + age);
+        logActivity( "Tree feeling: " + feeling);
+        logActivity( "Tree location: " + location);
+        logActivity( "Tree height: " + height);
+        logActivity( "Dirt type: " + dirtType);
+        logActivity( "Sunlight exposure: " + sunlightExposure);
+        logActivity( "Caretaker: " + caretakerName + " (" + caretakerSex + ")\n");
+    }
+
+    /**
+     * Отримує назву рослини.
+     * 
+     * @return Назва рослини.
+     */
+    public String getName() {
+        return name;
+    }
+
+    /**
+     * Отримує вік рослини.
+     * 
+     * @return Вік рослини.
+     */
+    public int getAge() {
+        return age;
+    }
+
+    /**
+     * Отримує висоту рослини.
+     * 
+     * @return Висота рослини в метрах.
+     */
+    public double getHeight() {
+        return height;
     }
 
     /**
@@ -78,8 +106,9 @@ public class Plant {
     public void water() {
         this.feeling += 1;
         if (this.feeling > 10) this.feeling = 10;  // Максимум щастя = 10
-        Writer(name + " is watered. Feeling improved to " + this.feeling);
+        logActivity(name + " is watered. Feeling improved to " + this.feeling);
     }
+
 
     /**
      * Метод для внесення добрив. Покращує стан рослини більше, ніж полив.
@@ -87,8 +116,9 @@ public class Plant {
     public void fertilize() {
         this.feeling += 2;
         if (this.feeling > 10) this.feeling = 10;  // Максимум щастя = 10
-        Writer(name + " is fertilized. Feeling improved to " + this.feeling);
+        logActivity(name + " is fertilized. Feeling improved to " + this.feeling);
     }
+
 
     /**
      * Метод для зростання рослини залежно від рівня освітлення.
@@ -100,39 +130,42 @@ public class Plant {
             this.height += 2;
             this.feeling += 1;
             if (this.feeling > 10) this.feeling = 10;
-            Writer(name + " grows well in full sun: height+2, feeling improved to " + this.feeling);
+            logActivity(name + " grows well in full sun: height+2, feeling improved to " + this.feeling);
         } else if (sunlight.equals("partial shade")) {
             this.height += 1;
             this.feeling += 0.5;
-            Writer(name + " grows in partial shade: height+1, feeling improved slightly.");
+            logActivity(name + " grows in partial shade: height+1, feeling improved slightly.");
         } else {
             this.height -= 1;
             this.feeling -= 1;
             if (this.feeling < 0) this.feeling = 0;  // Мінімум щастя = 0
-            Writer(name + " struggles in low light: height-1, feeling decreased to " + this.feeling);
+            logActivity(name + " struggles in low light: height-1, feeling decreased to " + this.feeling);
         }
     }
+
 
     /**
      * Метод для перевірки стану рослини на основі її "відчуттів".
      */
     public void checkFeeling() {
         if (this.feeling >= 8) {
-        	Writer(name + " is very happy and thriving.");
+            logActivity(name + " is very happy and thriving.");
         } else if (this.feeling >= 5) {
-        	Writer(name + " is doing fine, but could use some more care.");
+            logActivity(name + " is doing fine, but could use some more care.");
         } else {
-            Writer(name + " is struggling and needs attention!");
+            logActivity(name + " is struggling and needs attention!");
         }
     }
+
 
     /**
      * Метод для отримання поточного стану рослини.
      */
     public void status() {
-    	Writer("Status of " + name + ": Age: " + age + ", Location: " + location + 
+        logActivity("Status of " + name + ": Age: " + age + ", Location: " + location + 
                     ", Height: " + height + ", Feeling: " + feeling);
     }
+
 
     /**
      * Метод для зміни місцезнаходження рослини.
@@ -141,8 +174,9 @@ public class Plant {
      */
     public void relocate(String newLocation) {
         this.location = newLocation;
-        Writer(name + " has been relocated to " + newLocation);
+        logActivity(name + " has been relocated to " + newLocation);
     }
+
 
     /**
      * Метод для зміни доглядача рослини.
@@ -151,15 +185,16 @@ public class Plant {
      */
     public void setCaretaker(Caretaker newCaretaker) {
         this.caretaker = newCaretaker;
-        Writer(name + "'s caretaker has been changed to " + newCaretaker.getNameCaretaker());
+        logActivity(name + "'s caretaker has been changed to " + newCaretaker.getNameCaretaker());
     }
+
 
     /**
      * Метод для запису активності в лог.
      *
      * @param message Повідомлення для запису в файл
      */
-    public void Writer(String message) {
+    public void logActivity(String message) {
         try (FileWriter fw = new FileWriter("plant_activity.txt", !isFirstLog)) {
             fw.write(message + "\n");
             System.out.println(message);
@@ -169,6 +204,7 @@ public class Plant {
         }
     }
 
+
     /**
      * Метод для зміни типу ґрунту рослини.
      *
@@ -176,23 +212,27 @@ public class Plant {
      */
     public void changeSoil(String newSoilType) {
         this.dirtType.setDirtType(newSoilType);
-        Writer(name + " soil type changed to " + newSoilType);
+        logActivity(name + " soil type changed to " + newSoilType);
     }
+
 
     /**
      * Метод для перевірки рівня води рослини.
      */
     public void checkWaterLevel() {
-    	Writer(name + " water level is optimal.");
+        logActivity(name + " water level is optimal.");
     }
 
+
     // Внутрішні класи для представлення виду рослини, типу ґрунту, освітлення та доглядача
+
 
     /**
      * Внутрішній клас для представлення виду рослини.
      */
     public class Species {
         private String species;
+
 
         /**
          * Отримує вид рослини.
@@ -201,6 +241,7 @@ public class Plant {
         public String getSpecies() {
             return species;
         }
+
 
         /**
          * Встановлює вид рослини.
@@ -211,11 +252,13 @@ public class Plant {
         }
     }
 
+
     /**
      * Внутрішній клас для представлення типу ґрунту рослини.
      */
     public class DirtType {
         private String dirtType;
+
 
         /**
          * Отримує тип ґрунту рослини.
@@ -224,6 +267,7 @@ public class Plant {
         public String getDirtType() {
             return dirtType;
         }
+
 
         /**
          * Встановлює тип ґрунту рослини.
@@ -234,11 +278,13 @@ public class Plant {
         }
     }
 
+
     /**
      * Внутрішній клас для представлення рівня освітлення рослини.
      */
     public class SunlightExposure {
         private String exposure;
+
 
         /**
          * Отримує рівень освітлення рослини.
@@ -247,6 +293,7 @@ public class Plant {
         public String getExposure() {
             return exposure;
         }
+
 
         /**
          * Встановлює рівень освітлення рослини.
@@ -257,12 +304,14 @@ public class Plant {
         }
     }
 
+
     /**
      * Внутрішній клас для представлення доглядача рослини.
      */
     public class Caretaker {
         private String sexCaretaker;
         private String nameCaretaker;
+
 
         /**
          * Отримує стать доглядача.
@@ -272,6 +321,7 @@ public class Plant {
             return sexCaretaker;
         }
 
+
         /**
          * Встановлює стать доглядача.
          * @param sexCaretaker Стать доглядача.
@@ -280,6 +330,7 @@ public class Plant {
             this.sexCaretaker = sexCaretaker;
         }
 
+
         /**
          * Отримує ім'я доглядача.
          * @return Ім'я доглядача.
@@ -287,6 +338,7 @@ public class Plant {
         public String getNameCaretaker() {
             return nameCaretaker;
         }
+
 
         /**
          * Встановлює ім'я доглядача.

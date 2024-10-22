@@ -1,0 +1,118 @@
+Tree name: Apple Tree
+Tree species: Apple
+Tree age: 10
+Tree feeling: 7
+Tree location: Garden
+Tree height: 5.0
+Dirt type: Loamy
+Sunlight exposure: Full Sun
+Caretaker: John (Male)
+
+Season changed to spring. Tree appearance updated.
+Apple Tree is doing fine, but could use some more care.
+Tree Apple Tree has 50 branches, 0 fruits, leaf color: green.
+Season changed to summer. Tree appearance updated.
+Grew 10 fruits. Total fruits: 10
+Apple Tree is doing fine, but could use some more care.
+Tree Apple Tree has 50 branches, 10 fruits, leaf color: green.
+Season changed to fall. Tree appearance updated.
+Apple Tree is doing fine, but could use some more care.
+Tree Apple Tree has 50 branches, 10 fruits, leaf color: yellow.
+Season changed to winter. Tree appearance updated.
+Apple Tree is doing fine, but could use some more care.
+Tree Apple Tree has 50 branches, 10 fruits, leaf color: none.
+Tree name: Apple Tree
+Tree species: Apple
+Tree age: 10
+Tree feeling: 7
+Tree location: Garden
+Tree height: 5.0
+Dirt type: Loamy
+Sunlight exposure: Full Sun
+Caretaker: John (Male)
+
+Season changed to spring. Tree appearance updated.
+Apple Tree is doing fine, but could use some more care.
+Tree Apple Tree has 50 branches, 0 fruits, leaf color: green.
+Season changed to summer. Tree appearance updated.
+Grew 10 fruits. Total fruits: 10
+Apple Tree is doing fine, but could use some more care.
+Tree Apple Tree has 50 branches, 10 fruits, leaf color: green.
+Season changed to fall. Tree appearance updated.
+Apple Tree is doing fine, but could use some more care.
+Tree Apple Tree has 50 branches, 10 fruits, leaf color: yellow.
+Season changed to winter. Tree appearance updated.
+Apple Tree is doing fine, but could use some more care.
+Tree Apple Tree has 50 branches, 10 fruits, leaf color: none.
+Tree name: Apple Tree
+Tree species: Apple
+Tree age: 10
+Tree feeling: 7
+Tree location: Garden
+Tree height: 5.0
+Dirt type: Loamy
+Sunlight exposure: Full Sun
+Caretaker: John (Male)
+
+Season changed to spring. Tree appearance updated.
+Apple Tree is doing fine, but could use some more care.
+Tree Apple Tree has 50 branches, 0 fruits, leaf color: green.
+Season changed to summer. Tree appearance updated.
+Grew 10 fruits. Total fruits: 10
+Apple Tree is doing fine, but could use some more care.
+Tree Apple Tree has 50 branches, 10 fruits, leaf color: green.
+Season changed to fall. Tree appearance updated.
+Cannot grow fruits. It's not summer.
+Apple Tree is doing fine, but could use some more care.
+Tree Apple Tree has 50 branches, 10 fruits, leaf color: yellow.
+Season changed to winter. Tree appearance updated.
+Apple Tree is doing fine, but could use some more care.
+Tree Apple Tree has 50 branches, 10 fruits, leaf color: none.
+Tree name: Apple Tree
+Tree species: Apple
+Tree age: 10
+Tree feeling: 7
+Tree location: Garden
+Tree height: 5.0
+Dirt type: Loamy
+Sunlight exposure: Full Sun
+Caretaker: John (Male)
+
+Season changed to spring. Tree appearance updated.
+Apple Tree is doing fine, but could use some more care.
+Tree Apple Tree has 50 branches, 0 fruits, leaf color: green.
+Season changed to summer. Tree appearance updated.
+Grew 10 fruits. Total fruits: 10
+Apple Tree is doing fine, but could use some more care.
+Tree Apple Tree has 50 branches, 10 fruits, leaf color: green.
+Season changed to fall. Tree appearance updated.
+Cannot grow fruits. It's not summer.
+Apple Tree is doing fine, but could use some more care.
+Tree Apple Tree has 50 branches, 10 fruits, leaf color: yellow.
+Season changed to winter. Tree appearance updated.
+Apple Tree is doing fine, but could use some more care.
+Tree Apple Tree has 50 branches, 10 fruits, leaf color: none.
+Tree name: Apple Tree
+Tree species: Apple
+Tree age: 10
+Tree feeling: 7
+Tree location: Garden
+Tree height: 5.0
+Dirt type: Loamy
+Sunlight exposure: Full Sun
+Caretaker: John (Male)
+
+Season changed to spring. Tree appearance updated.
+Apple Tree is doing fine, but could use some more care.
+Tree Apple Tree has 50 branches, 0 fruits, leaf color: green.
+Season changed to summer. Tree appearance updated.
+Grew 10 fruits. Total fruits: 10
+Apple Tree is doing fine, but could use some more care.
+Tree Apple Tree has 50 branches, 10 fruits, leaf color: green.
+Season changed to fall. Tree appearance updated.
+Cannot grow fruits. It's not summer.
+Apple Tree is doing fine, but could use some more care.
+Tree Apple Tree has 50 branches, 10 fruits, leaf color: yellow.
+Season changed to winter. Tree appearance updated.
+Apple Tree is doing fine, but could use some more care.
+Tree Apple Tree has 50 branches, 10 fruits, leaf color: none.

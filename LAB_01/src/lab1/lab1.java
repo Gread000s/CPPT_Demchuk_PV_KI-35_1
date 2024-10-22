@@ -1,4 +1,3 @@
-
 package lab1;
 
 import java.io.*;
@@ -19,7 +18,7 @@ public class lab1 {
         // Ініціалізація змінних
         int nRows;
         char[][] arr; // оголошення зубчастого масиву
-        String filler; // символ-заповнювач
+        String filler;
         Scanner in = new Scanner(System.in); // об'єкт для зчитування введених даних з консолі
 
         // Створення текстового файлу для запису даних

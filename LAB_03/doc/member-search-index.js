@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"KI305.Demchuk.Lab3","c":"TreeApp","l":"main(String[])","u":"main(java.lang.String[])"},{"p":"KI305.Demchuk.Lab3","c":"TreeApp","l":"TreeApp()","u":"%3Cinit%3E()"}];updateSearchResults();
